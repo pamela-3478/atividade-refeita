@@ -29,3 +29,8 @@ class TestValidacaoLogin:
         assert validaLogin("usuario123", "Senha123!") == False
         assert validaLogin("Usuario123", "senha123!") == False
         assert validaLogin("usuario123", "senha123!") == False
+
+    def test_validaMensagem(self):
+        # Testes para validar a mensagem
+        assert validaMensagem("GM5RwLqwPcXsUWbDnrQDSpTbUMwu0ySUGM5RwLqwPcXsUWbDnrQDSpTbUMwu0ySUrw9jbxEeLLgd") = False
+        assert validaMensagem("Mensagem de teste") = True
